@@ -12,9 +12,9 @@
 </head>
 <body>
   <div class="container">
-    <h1>Lunchtime Survey</h1>
     <div class="row">
-      <form id="lunchtime-survey">
+      <h1 class="col-md-12 pl-0">Lunchtime Survey</h1>
+      <form id="lunchtime-survey" class="col-md-6">
         <div class="form-group">
           <label for="firstName">Enter your first name:</label>
           <input id="firstName" class="form-control" type="text">
@@ -24,7 +24,7 @@
           <input id="lastName" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="beverageChoice"></label>
+          <label for="beverageChoice">Beverage Choice:</label>
           <select class="form-control" id="beverageChoice">
             <option>Coffee</option>
             <option>Tea</option>
@@ -33,7 +33,29 @@
             <option>Juice</option>
           </select>
         </div>
+        <label>Pick a dessert:</label>
+        <div class="form-group">
+          <label><input type="radio" name="dessert" value="chocolateCake" checked> Chocolate Cake</label>
+        </div>
+        <div class="form-group">
+          <label><input type="radio" name="dessert" value="vanillaIceCream"> Vanilla Ice Cream</label>
+        </div>
+        <div class="form-group">
+          <label><input type="radio" name="dessert" value="peanutButterCookie"> Peanut Butter Cookie</label>
+        </div>
+        <div class="form-group">
+          <label for="lunchDate">When do you want lunch?</label>
+          <input id="lunchDate" class="form-control" type="date">
+        </div>
+        <div class="form-group">
+          <label for="colorGroup">What color group are you in?</label>
+          <input id="colorGroup" class="form-control" type="color">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
       </form>
+      <div id="surveyResults" class="col-md-6">
+        
+      </div>
     </div>
   </div>
 </body>
