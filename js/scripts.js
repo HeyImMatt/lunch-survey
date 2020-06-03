@@ -7,10 +7,14 @@ $(document).ready(function() {
     const dessert =  $("input:radio[name=dessert]:checked").val();
     const lunchDate = $("#lunchDate").val();
     const colorGroup = $("#colorGroup").val();
-    console.log(firstName, lastName, beverageChoice, dessert, lunchDate, colorGroup, typeof(colorGroup))
 
     $(".firstName").text(firstName);
     $(".lastName").text(lastName);
+    $(".beverageChoice").text(beverageChoice);
+    $(".dessert").text(dessert);
+    $(".lunchDate").text(lunchDate);
+    $(".colorGroup").text(colorGroup);
+    $(".colorGroup").css("color", colorGroup);
     $("#surveyResults").toggle();
   })
 })
